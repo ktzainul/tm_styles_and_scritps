@@ -1,1 +1,148 @@
 
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.modal-dialog {
+        max-width: 99%;
+        min-width: 70%;
+    }
+.modal-content {
+    background-color: #f8f9fa;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    color: #333;
+    margin: auto;
+    padding: 20px;
+    overflow-x: auto;!important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-header .modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.modal-header .close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #000;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-group .form-control {
+    flex: 1;
+    margin: 0.3rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.input-group .form-control::placeholder {
+    color: #6c757d; /* Placeholder text color */
+    font-style: italic; /* Placeholder font style */
+    /* Add any other styles you want for the placeholder */
+}
+
+.input-group .btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: 10px;
+}
+
+.input-group .btn-danger {
+    background-color: #644144;
+}
+
+.input-group .btn-primary {
+    background-color: #345c87;
+}
+
+.input-group .btn-success {
+    background-color: #28a745;
+}
+/* Add styling for 'Add Command' and 'Done' buttons */
+.btn-add-command, .btn-success {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color:#345c87;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+/* Add styling for 'Add Command' and 'Done' buttons */
+.bulk-upload-popup {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color:#0d6efd;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+
+    .sub-input-group {
+        display: block;
+    }
+.disabled-input {
+    background-color: red; /* Light grey */
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 5px;
+    transition: 0.2s ease all;
+}
+
+input:focus ~ .floating-label,
+input:not(:placeholder-shown) ~ .floating-label {
+    font-size: 0.75em;
+    top: -20px;
+    left: 0;
+    color: #3951b2;
+}
